@@ -6,6 +6,9 @@ import os          # for working with folders/files
 import json        # for saving data in JSON format 
 from datetime import datetime  # for getting current date and time
 
+# -----------------------------------------------------------
+# Step 1: Make the API calls
+# -----------------------------------------------------------
 # url's and Headers
 
 Top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
@@ -13,6 +16,9 @@ story_url = "https://hacker-news.firebaseio.com/v0/item/{}.json"
 
 headers = {"User-Agent": "TrendPulse/1.0"}
 
+# -----------------------------------------------------------
+# Step 2: Extract the Fields
+# -----------------------------------------------------------
 # Mapping the category keywords
 categories = {
     "technology": ["AI", "software", "tech", "code", "computer", "data", "cloud", "API", "GPU", "LLM"],
@@ -43,8 +49,8 @@ def classify(title):
 
 try:
     response = requests.get(Top_stories_url, headers= headers)
-    # JSON array fetching first 50 story IDs
-    story_ids = response.json()[:50]
+    # JSON array fetching first 500 story IDs
+    story_ids = response.json()[:500]
 except Exception as e:
     print(f"Failed to fetch the stories: {e}")
     exit()
@@ -83,14 +89,17 @@ for cat in categories:
                      "title": title,
                      "category": assigned,
                      "score": story.get("score", 0),
-                     "comments": story.get("descendants", 0),
+                     "num_comments": story.get("descendants", 0),
                      "author": story.get("by", "unknown"),
-                     "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
+                     "collected_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
         # Increment the count
         count[cat] += 1
     # Wait 2 seconds before next category (to avoid too many requests)
     time.sleep(2)
 
+# -----------------------------------------------------------
+# Step 3: Save to a JSON file
+# -----------------------------------------------------------
 # Save data to JSON file
 # Create folder name "data" if not exists
 os.makedirs("data", exist_ok = True)

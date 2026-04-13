@@ -1,0 +1,94 @@
+post_id,title,category,score,num_comments,author,collected_at
+47753689,Building a CLI for All of Cloudflare,technology,88,25,soheilpro,2026-04-13 22:53:47
+47754002,Missouri town fires half its city council over data center deal,technology,51,23,impish9208,2026-04-13 22:54:01
+47748064,The economics of software teams: Why most engineering orgs are flying blind,technology,346,199,kiyanwang,2026-04-13 22:54:06
+47744255,I ran Gemma 4 as a local model in Codex CLI,technology,195,86,dvaughan,2026-04-13 22:54:24
+47749674,Show HN: I built a social media management tool in 3 weeks with Claude and Codex,technology,161,109,JanSchu,2026-04-13 22:54:25
+47738883,Tell HN: Docker pull fails in Spain due to football Cloudflare block,technology,1072,392,littlecranky67,2026-04-13 22:54:28
+47750259,Point Cloud Allemansrätten,technology,32,4,ColinWright,2026-04-13 22:54:38
+47743819,Basics of Radar Technology,technology,37,0,_Microft,2026-04-13 22:55:10
+47751265,Rockstar hackers set to release GTA 6 data breach as 'demands not met',technology,14,6,01-_-,2026-04-13 22:55:14
+47741889,Show HN: Claudraband – Claude Code for the Power User,technology,114,41,halfwhey,2026-04-13 22:55:26
+47736555,I run multiple $10K MRR companies on a $20/month tech stack,technology,912,493,tradertef,2026-04-13 22:55:31
+47745120,Tech valuations are back to pre-AI boom levels,technology,143,40,akyuu,2026-04-13 22:55:45
+47727960,Show HN: Pardonned.com – A searchable database of US Pardons,technology,492,267,vidluther,2026-04-13 22:55:58
+47732402,The APL programming language source code (2012),technology,80,28,tosh,2026-04-13 22:56:03
+47729634,Now is the best time to write code by hand,technology,115,52,nickgreg,2026-04-13 22:56:05
+47752301,Booking.com warns customers of hack that exposed their data,technology,12,2,Brajeshwar,2026-04-13 22:56:08
+47730407,South Korea introduces universal basic mobile data access,technology,415,125,saikatsg,2026-04-13 22:56:13
+47728653,"France's government is ditching Windows for Linux, says US tech a strategic risk",technology,502,299,pabs3,2026-04-13 22:56:25
+47735405,Software Preservation Group: C++ History Collection,technology,42,3,quuxplusone,2026-04-13 22:56:26
+47687273,Git commands I run before reading any code,technology,2317,503,grepsedawk,2026-04-13 22:56:51
+47720418,"Launch HN: Twill.ai (YC S25) – Delegate to cloud agents, get back PRs",technology,77,92,danoandco,2026-04-13 22:57:05
+47719486,France to ditch Windows for Linux to reduce reliance on US tech,technology,626,697,Teever,2026-04-13 22:57:28
+47718470,Code is run more than read (2023),technology,142,102,facundo_olano,2026-04-13 22:57:31
+47704804,How NASA built Artemis II’s fault-tolerant computer,technology,634,234,speckx,2026-04-13 22:57:33
+47716490,FBI used iPhone notification data to retrieve deleted Signal messages,technology,628,305,01-_-,2026-04-13 22:57:51
+47722333,"Chimpanzees in Uganda locked in eight-year 'civil war', say researchers",worldnews,433,274,neversaydie,2026-04-13 23:00:13
+47745261,Vegetative Patients May Be More Aware Than We Knew,worldnews,34,13,bookofjoe,2026-04-13 23:00:58
+47745230,Sam Altman's home targeted in second attack,worldnews,143,316,babelfish,2026-04-13 23:01:08
+47721946,JSON formatter Chrome plugin now closed and injecting adware,worldnews,284,135,jkl5xx,2026-04-13 23:01:23
+47692043,Muse Spark: Scaling towards personal superintelligence,worldnews,392,367,chabons,2026-04-13 23:03:49
+47729994,Polymarket gamblers betting millions on war,worldnews,158,127,sandebert,2026-04-13 23:03:50
+47693960,Flashback to a time when government reports were works of art,worldnews,30,12,NaOH,2026-04-13 23:04:20
+47718891,Supply chain nightmare: How Rust will be attacked and what we can do to mitigate,worldnews,122,72,fanf2,2026-04-13 23:04:27
+47722566,DOJ wants to scrap Watergate-era rule that makes presidential records public,worldnews,261,69,tlhunter,2026-04-13 23:05:10
+47718694,"""Negative"" views of Broadcom driving VMware migrations, rival says",worldnews,76,39,breve,2026-04-13 23:05:31
+47711623,Mexico's President Sheinbaum Decrees Universal Healthcare for 120M,worldnews,61,32,testing22321,2026-04-13 23:06:53
+47737642,Lawyer behind AI psychosis cases warns of mass casualty risks,worldnews,13,6,mentalgear,2026-04-13 23:07:33
+47734106,AI Is Tipping the Scales Toward Hackers After Mythos Release,worldnews,15,7,thywis,2026-04-13 23:07:35
+47725942,Warez Scene,worldnews,25,7,maltalex,2026-04-13 23:07:46
+47723539,Molotov cocktail attack at OpenAI CEO Sam Altman's home,worldnews,18,1,helloplanets,2026-04-13 23:07:57
+47695647,The AI Great Leap Forward,worldnews,135,67,jodah,2026-04-13 23:08:00
+47731064,Valve Developer Improves the Linux Gaming Experience for Limited VRAM Hardware,worldnews,13,0,bpierre,2026-04-13 23:08:01
+47753472,Nothing Ever Happens: Polymarket bot that always buys No on non-sports markets,sports,169,53,m-hodges,2026-04-13 23:09:01
+47741460,How long-distance couples use digital games to facilitate intimacy (2025),sports,120,37,radeeyate,2026-04-13 23:09:56
+47749295,Show HN: Equirect – a Rust VR video player,sports,8,1,greggman65,2026-04-13 23:10:18
+47747248,"Haunt, the 70s text adventure game, is now playable on a website",sports,77,23,jscalo,2026-04-13 23:10:31
+47698455,Starfling: A one-tap endless orbital slingshot game in a single HTML file,sports,620,152,iceberger2001,2026-04-13 23:11:01
+47698111,Bevy game development tutorials and in-depth resources,sports,137,62,GenericCanadian,2026-04-13 23:11:24
+47713495,Team from ETH Zurich make high quality quantum swap gate using a geometric phase,sports,237,55,joko42,2026-04-13 23:11:38
+47689165,"Show HN: I pipe free sports streams into Jellyfin – no ads, just HLS",sports,118,36,pruz,2026-04-13 23:15:00
+47709251,Netflix Prices Went Up Again – I Bought a DVD Player Instead,sports,262,278,speckx,2026-04-13 23:15:05
+47689550,"LLM plays an 8-bit Commander X16 game using structured ""smart senses""",sports,28,6,russellharper,2026-04-13 23:15:14
+47704430,Can It Resolve Doom? Game Engine in 2k DNS Records,sports,10,2,choult,2026-04-13 23:15:17
+47730916,QB64 Tutorial A beginner's introduction to game programming,sports,7,0,AlexeyBrin,2026-04-13 23:17:09
+47717565,"Show HN: Steadcast – Free Mac podcast player for learning, not background noise",sports,7,1,steadcast,2026-04-13 23:18:20
+47723499,Beyond Copy-and-Paste: How Game Studios Are Reorganizing Around AI (Research),sports,5,0,pella,2026-04-13 23:18:57
+47733776,"Amazon Luna Will No Longer Allow Owners to Buy Games, Access Game Stores",sports,15,2,surgical_fire,2026-04-13 23:19:13
+47747740,"No Degree, $155K Pay: Trump's FAA Is Recruiting Gamers as Air Traffic Controller",sports,10,3,onemoresoop,2026-04-13 23:19:28
+47738343,The Physics of GPS,science,150,34,maouida,2026-04-13 23:21:23
+47745543,New metal with triple copper's heat conduction challenges fundamental physics,science,29,11,thunderbong,2026-04-13 23:22:46
+47739305,Tell HN: OpenAI silently removed Study Mode from ChatGPT,science,171,74,smokel,2026-04-13 23:22:54
+47728323,Relics of the Heroic Age of Manned Space Flight,science,20,1,zdgeier,2026-04-13 23:23:13
+47708818,Native Instant Space Switching on macOS,science,640,324,PaulHoule,2026-04-13 23:23:31
+47741449,SpaceX holds $603M in Bitcoin despite $5B loss stemming from xAI,science,26,9,lexandstuff,2026-04-13 23:24:07
+47733222,Show HN: Bitcoin and Quantum Computing – a three-part research series,science,6,1,nvk,2026-04-13 23:27:24
+47704443,Study found that young adults have grown less hopeful and more angry about AI,science,141,184,elsewhen,2026-04-13 23:27:26
+47741514,The space science behind 'Project Hail Mary',science,6,0,Brajeshwar,2026-04-13 23:28:31
+47729727,"Researchers used AI to analyze 400k Reddit posts, revealing GLP-1 side effects",science,25,2,giuliomagnifico,2026-04-13 23:29:24
+47742200,Show HN: boringBar – a taskbar-style dock replacement for macOS,entertainment,466,267,a-ve,2026-04-13 23:31:19
+47739174,Show HN: Oberon System 3 runs natively on Raspberry Pi 3 (with ready SD card),entertainment,227,77,Rochus,2026-04-13 23:31:33
+47741393,Textbooks and Methods of Note-Taking in Early Modern Europe (2008),entertainment,48,0,mooreds,2026-04-13 23:32:08
+47724352,Filing the corners off my MacBooks,entertainment,1382,658,normanvalentine,2026-04-13 23:32:24
+47743700,European AI. A playbook to own it,entertainment,194,127,hjouneau,2026-04-13 23:32:48
+47733066,New synthesis of astronomical measurements shows Hubble tension is real,entertainment,74,14,anigbrowl,2026-04-13 23:33:53
+47745300,Show HN: A social feed with no strangers,entertainment,8,5,rpatni,2026-04-13 23:34:06
+47721997,Show HN: FluidCAD – Parametric CAD with JavaScript,entertainment,155,37,maouida,2026-04-13 23:34:29
+47699470,The Life and Death of the Book Review,entertainment,30,7,lermontov,2026-04-13 23:35:17
+47722011,Show HN: A WYSIWYG word processor in Python,entertainment,87,39,chrisecker,2026-04-13 23:35:22
+47705413,Show HN: I built a Cargo-like build tool for C/C++,entertainment,174,166,randerson_112,2026-04-13 23:35:30
+47721255,Show HN: Eve – Managed OpenClaw for work,entertainment,71,39,zachdive,2026-04-13 23:35:31
+47730522,Show HN: Waffle – Native macOS terminal that auto-tiles sessions into a grid,entertainment,38,20,olleeolleeollee,2026-04-13 23:35:37
+47702647,"Launch HN: Relvy (YC F24) – On-call runbooks, automated",entertainment,48,25,behat,2026-04-13 23:35:44
+47736071,The Universal Standard Book Number,entertainment,13,4,novalis78,2026-04-13 23:35:49
+47715339,Show HN: Keeper – embedded secret store for Go (help me break it),entertainment,63,33,babawere,2026-04-13 23:36:41
+47733479,Show HN: A Better Internet,entertainment,10,3,tclancy,2026-04-13 23:37:12
+47694036,Show HN: Orange Juice – Small UX improvements that make HN easier to read,entertainment,147,158,latchkey,2026-04-13 23:37:30
+47690797,Show HN: Go-Bt: Minimalist Behavior Trees for Go,entertainment,62,12,rvitorper,2026-04-13 23:37:47
+47710835,"Show HN: Rust based eBook library for Python, with MIT license",entertainment,33,3,larry-the-agent,2026-04-13 23:37:53
+47696562,Show HN: Is Hormuz open yet?,entertainment,482,209,anonfunction,2026-04-13 23:37:54
+47704259,"Show HN: Guruka.com – free guided mediations. No signup, private, works offline",entertainment,39,16,eummm,2026-04-13 23:37:55
+47692661,Show HN: TUI-use: Let AI agents control interactive terminal programs,entertainment,52,37,dreamsome,2026-04-13 23:38:12
+47689319,Show HN: Skrun – Deploy any agent skill as an API,entertainment,61,12,frizull,2026-04-13 23:38:14
+47716617,Show HN: Do All the Things,entertainment,26,8,brainbun,2026-04-13 23:38:35
