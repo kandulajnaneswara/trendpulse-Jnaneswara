@@ -1,0 +1,112 @@
+# Import all the libraries & setup required
+
+import requests    # for API calls
+import time        # for rate limiting i.e., sleep
+import os          # for working with folders/files
+import json        # for saving data in JSON format 
+from datetime import datetime  # for getting current date and time
+
+# url's and Headers
+
+Top_stories_url = "https://hacker-news.firebaseio.com/v0/topstories.json"
+story_url = "https://hacker-news.firebaseio.com/v0/item/{}.json"
+
+headers = {"User-Agent": "TrendPulse/1.0"}
+
+# Mapping the category keywords
+categories = {
+    "technology": ["AI", "software", "tech", "code", "computer", "data", "cloud", "API", "GPU", "LLM"],
+    "worldnews": ["war", "government", "country", "president", "election", "climate", "attack", "global"],
+    "sports": ["NFL", "NBA", "FIFA", "sport", "game", "team", "player", "league", "championship"],
+    "science": ["research", "study", "space", "physics", "biology", "discovery", "NASA", "genome"],
+    "entertainment": ["movie", "film", "music", "Netflix", "game", "book", "show", "award", "streaming"]
+}
+
+# Maximum no of stories per category
+Max_per_category = 25
+
+# Function to classify story based on its title
+def classify(title):
+    if not title:          # If title is empty return None
+        return None
+    else:
+        title = title.lower()      # Convert title to lower case
+    # Check each category
+    for cat, keywords in categories.items():
+        # If any keyword found in title then return that category (No match return None)
+        if any (word in title for word in keywords):
+            return cat
+    return None
+
+
+# Fetch the top story IDs
+
+try:
+    response = requests.get(Top_stories_url, headers= headers)
+    # JSON array fetching first 50 story IDs
+    story_ids = response.json()[:50]
+except Exception as e:
+    print(f"Failed to fetch the stories: {e}")
+    exit()
+
+# Create a list to store the data
+data = []
+
+# Count how many stories collected per category
+count = {cat: 0 for cat in categories}
+
+# Process each category at a time
+for cat in categories:
+    print(f"Processing {cat} .....")
+    for ids in story_ids:
+        if count[cat] >= Max_per_category:           # If it reach max no of stories in a category then break for that category
+            break
+        try:
+            story = requests.get(story_url.format(ids), headers = headers).json()
+        except:
+            continue
+        if not story:
+            continue
+
+        # get the story title
+        title = story.get("title", "")
+
+        # Classify the title
+        assigned = classify(title)
+
+        # Skip if not matching current category
+        if assigned != cat:
+            continue
+
+        # Add data to list 
+        data.append({"post_id": story.get("id"),
+                     "title": title,
+                     "category": assigned,
+                     "score": story.get("score", 0),
+                     "comments": story.get("descendants", 0),
+                     "author": story.get("by", "unknown"),
+                     "time": datetime.now().strftime("%Y-%m-%d %H:%M:%S")})
+        # Increment the count
+        count[cat] += 1
+    # Wait 2 seconds before next category (to avoid too many requests)
+    time.sleep(2)
+
+# Save data to JSON file
+# Create folder name "data" if not exists
+os.makedirs("data", exist_ok = True)
+
+# Create file name with Today's date
+filename = f"data/trends_{datetime.now().strftime("%Y%m%d")}.json"
+
+# Write data to file
+with open(filename, "w") as f:
+    json.dump(data, f, indent = 4)
+
+# Print the resultant data
+print("saved", len(data), "stories to ", filename)
+
+        
+
+
+
+
